@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="SmokeSuite1" verbose="1" >
+    <test name="smoke" >
+        <parameter name="URL" value="https://rahulshettyacademy.com/seleniumPractise/#/"/>
+        <parameter name="title" value="GreenKart - veg and fruits kart"/>
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="org.order.azureTest"/>
+        </classes>
+    </test>
+</suite>
