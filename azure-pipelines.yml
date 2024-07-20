@@ -15,8 +15,10 @@ steps:
   inputs:
     versionSpec: '17'
     jdkArchitectureOption: 'x64'
-    jdkSourceOption: 'LocalDirectory'
-    jdkFile: 'C:\Program Files\Java\jdk-17.0.3.1'
+    jdkSourceOption: LocalDirectory
+    jdkFile: "JDK Bin.zip"
+    jdkDestinationDirectory: "$(agent.tempDirectory)/bin"
+    cleanDestinationDirectory: true
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
